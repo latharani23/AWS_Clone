@@ -1,0 +1,148 @@
+/* General styling */
+body {
+    background-color: #eeeded !important; /* Use !important to override other rules */
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 20px 60px; /* Increased vertical padding for more height */
+    margin: 0px 0; /* Add margin to top and bottom of the navbar */
+    display: flex;
+    width: 100%; /* Ensure navbar spans full width */
+    height: 130px; /* Set a specific height for the navbar */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e464e; /* Dark background color */
+    background-image: linear-gradient(to right, #2b2d42, #0e0f10); /* Gradient background color */
+    color: #fff; /* White text color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
+}
+/* Navbar Brand and Logo */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White color for navbar text */
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+/* Align image to the left with added margin */
+.navbar-brand img {
+    margin-right: 20px; /* Add space to the right of the image */
+    margin-left: 10px;  /* Add space to the left of the image */
+    padding-left: 10px; /* Optional: Adds additional padding inside the image */
+}
+
+/* Navbar Icons - Align right */
+.navbar-icons {
+    display: flex;
+    align-items: center; /* Vertically align navbar icons */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+/* Language Dropdown */
+.language-dropdown {
+    margin-right: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Login Button */
+.login-btn {
+    font-size: 20px;
+    margin-right: 25px;
+    padding: 20px 10px;
+    color: #ffffff; /* Button color */
+    background-color: #f17c1c;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+/* Document-container Styling */
+.Document-container {
+    margin: 30px auto; /* Centered container */
+    padding: 30px;
+    margin-top: 60px;
+    margin-left: 3%;
+    margin-right: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Max width for the container */
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Paragraph and list styling */
+p, ul li {
+    font-size: 18px; /* Adjusted font size */
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 24px; /* Adjusted font size */
+    color: #555;
+    margin-bottom: 8px;
+}
+
+ul ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+ul ul li {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-icons {
+        margin-top: 10px;
+    }
+
+    .language-dropdown {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        margin-left: 0;
+    }
+
+    .Document-container {
+        padding: 20px; /* Reduced padding on small screens */
+        margin: 20px; /* Reduced margin on small screens */
+    }
+
+    h1, h2, p, ul li {
+        font-size: 24px; /* Smaller text size on mobile */
+    }
+}
