@@ -1,29 +1,28 @@
 /* General styling */
 body {
-    background-color: #eeeded !important; /* Use !important to override other rules */
+    background-color: #eeeded !important; 
     font-family: Arial, sans-serif;
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
+    margin: 0; 
+    padding: 0; 
     color: #333;
 }
 
 /* Navbar styling */
 .navbar {
-    padding: 20px 60px; /* Increased vertical padding for more height */
+    padding: 0px 0px; /* Increased vertical padding for more height */
     margin: 0px 0; /* Add margin to top and bottom of the navbar */
     display: flex;
     width: 100%; /* Ensure navbar spans full width */
     height: 130px; /* Set a specific height for the navbar */
     justify-content: space-between;
     align-items: center;
-    background-color: #3e464e; /* Dark background color */
     background-image: linear-gradient(to right, #2b2d42, #0e0f10); /* Gradient background color */
     color: #fff; /* White text color */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
 }
 /* Navbar Brand and Logo */
 .navbar-brand {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
     color: #fff; /* White color for navbar text */
     text-decoration: none;
@@ -31,39 +30,59 @@ body {
     align-items: center; /* Vertically align items */
 }
 
-/* Align image to the left with added margin */
-.navbar-brand img {
-    margin-right: 20px; /* Add space to the right of the image */
-    margin-left: 10px;  /* Add space to the left of the image */
-    padding-left: 10px; /* Optional: Adds additional padding inside the image */
+.navbar-left {
+    display: flex;
+    align-items: center; /* Align the logo vertically */
+    margin-left: 0; /* Ensure no left margin */
+}
+
+.navbar-left img {
+    margin-left: 60px; /* Optional: Adds space between the logo and the left edge */
+    padding-left: 0; /* Optional: Remove any unnecessary padding */
 }
 
 /* Navbar Icons - Align right */
 .navbar-icons {
     display: flex;
     align-items: center; /* Vertically align navbar icons */
-    justify-content: flex-end; /* Align items to the right */
+    justify-content: center; /* Align items to the right */
 }
 
 /* Language Dropdown */
 .language-dropdown {
     margin-right: 15px;
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 25px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 /* Login Button */
 .login-btn {
-    font-size: 20px;
-    margin-right: 25px;
-    padding: 20px 10px;
-    color: #ffffff; /* Button color */
+    font-size: 25px;
+    margin-right: 85px;
+    padding: 5px 10px;
     background-color: #f17c1c;
-    border: none;
-    padding: 0;
+    border: 1px solid #f17c1c;
+    border-radius: 5px;
     cursor: pointer;
+}
+/* Style for primary bullets */
+.primary-bullets {
+    list-style-type: disc;
+    margin-left: 30px;
+    font-size: 30x; /* Adjust the font size */
+    color: #333; /* Set a color for the text */
+    line-height: 1.5; /* Adjust line spacing */
+}
+
+/* Style for secondary bullets */
+.secondary-bullets {
+    list-style-type: circle;
+    margin-left: 80px; /* Indent secondary bullets more */
+    font-size: 30px; /* Smaller font size for secondary bullets */
+    color: #555; /* A slightly lighter color */
+    line-height: 1.5;
 }
 
 
@@ -77,45 +96,29 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1000px; /* Max width for the container */
+    max-width: 160%; /* Max width for the container */
+    justify-content: left;
 }
 
 /* Headings */
 h1, h2 {
-    font-size: 26px;
+    font-size: 30px;
     color: #333;
     margin-bottom: 10px;
     font-weight: bold;
+    text-align: left;
+    margin-left: 30px
 }
 
 /* Paragraph and list styling */
 p, ul li {
-    font-size: 18px; /* Adjusted font size */
+    font-size: 30px; /* Adjusted font size */
     line-height: 1.6;
-    color: #555;
+    color: #333;
+    text-align: left;
+    margin-left: 50px;
 }
 
-/* Lists */
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-ul li {
-    font-size: 24px; /* Adjusted font size */
-    color: #555;
-    margin-bottom: 8px;
-}
-
-ul ul {
-    list-style-type: circle;
-    padding-left: 20px;
-}
-
-ul ul li {
-    font-size: 24px;
-    margin-bottom: 5px;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -136,13 +139,207 @@ ul ul li {
     .icon {
         margin-left: 0;
     }
+ 
 
-    .Document-container {
-        padding: 20px; /* Reduced padding on small screens */
-        margin: 20px; /* Reduced margin on small screens */
-    }
-
-    h1, h2, p, ul li {
-        font-size: 24px; /* Smaller text size on mobile */
-    }
 }
+/*navbar2*  css styles */
+
+.custom-topbar {
+    background-color: #81afde !important; /* Light background (similar to bg-light) */
+    margin-top: 40px; /* Space at the top */
+    margin-left: 90px;
+    margin-right: 90px;
+    max-width: 67%;
+    height: 100px;
+    background-image: linear-gradient(to right, #e4f3f5, #eaf1f3); /* Gradient background color */
+
+    padding: 30px 30px; /* Space inside the navbar */
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: left; /* Center-align horizontally */
+    align-items: left; /* Center-align vertically */
+    border: 1px solid #ddd; /* Optional: Border for better visibility */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.custom-brand {
+    font-size: 26px; /* Adjust font size */
+    text-align: center; /* Center-align text */
+    color: #000; /* Text color */
+    width: 100%; /* Make the text span full width */
+}
+
+
+
+/* bullets css*/
+
+.proof-list {
+    list-style-type: none; /* Removes the bullet points */
+    padding-left: 0; /* Removes any left padding */
+}
+
+
+
+/* Proof image container initially hidden */
+.proof-image-container {
+    display: none; /* Hide the image initially */
+    margin-top: 3px; /* Adds spacing above the image */
+}
+
+/* Show image when the 'show' class is added */
+.proof-image-container.show {
+    display: block; /* Shows the image when the 'show' class is added */
+}
+
+/* Image responsiveness */
+.proof-image {
+    max-width: 100%; /* Ensures the image scales responsively */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+/* Arrow rotation when item is active (image is visible) */
+.toggle-item.active .toggle-arrow {
+    transform: rotate(90deg); /* Rotate the arrow when active */
+}
+
+/* Arrow styling and transition for smooth rotation */
+.toggle-arrow {
+    margin-right: 10px; /* Adds space between the arrow and text */
+    transition: transform 0.3s ease; /* Smooth rotation of the arrow */
+    font-size: 30px; /* Set arrow size to 30px */
+    font-weight: bold;
+}
+
+.toggle-arrow .text {
+    font-size: 30px; /* Set a specific size for the text */
+    font-weight: bold; /* Make the text bold */
+    color: #333333; /* Dark color for the text */
+}
+
+
+/*info symbol */
+/* Style for the information symbol */
+.info-symbol {
+    font-size: 40px; /* Adjust the size of the symbol */
+    font-weight: bold;   
+    color: #4169E1; /* Royal Blue color for the symbol */
+    margin-right: 8px; /* Adds some space between the symbol and text */
+}
+
+
+/* DocumentUpload.css */
+
+/* Paragraph and File Upload Info Styling */
+p {
+    font-size: 30px;
+    color: #333;
+}
+
+p strong {
+    font-weight: bold;
+}
+
+p1 {
+    font-size: 30px;
+    color: #333;
+    margin-top: 10px;
+    display: block; /* Fix to ensure it displays correctly */
+    margin-left: 40px;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+/* Input File Styling */
+.input-file {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 25px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    justify-content:left;
+    margin-left: 40px;
+}
+
+/* Selected Files Section Styling */
+.selected-files {
+    margin-top: 24px;
+    margin-left: 10px;
+}
+
+.selected-files h4 {
+    font-size: 30px;
+    color: #333;
+    margin-left:10px ;
+}
+
+.selected-files p {
+    font-size: 30px;
+    color: #555;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 70px;
+    font-size: 30px;
+    background-color:#f17c1c;
+    color: rgb(16, 15, 15);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    text-align: left;
+    width: 25%;
+    margin-left: 40px;
+}
+
+.button:hover {
+    background-color: #30a81d;
+}
+
+.button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+.move-left {
+    margin-left: 0 !important;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative; /* Ensure proper positioning */
+    left: 50px !important; /* Force the element to move left */
+    width: 80%;
+    height: auto;
+    min-height: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 8px;
+}
+
+
+/* General styling for the document upload navbar */
+.document-upload-navbar {
+    background-color: gray; /* Change background color to gray */
+    display: flex;
+    align-items: left;
+    justify-content: flex-start; /* Align items to the left */
+    padding: 30px 40px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Add space below the navbar */
+}
+
+.document-upload-navbar a {
+    color: white; /* Ensure text is visible on gray background */
+    font-size: 25px;
+    text-decoration: bold;
+    font-weight: bold;
+}
+

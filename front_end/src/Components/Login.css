@@ -1,9 +1,11 @@
 
 /* Center the signup form container */
 .Login-container {
-    width: 100%;
-    max-width: 400px;
+    width: 200%;
+    max-width: 600px;
+    max-height:800px;
     margin: 80px auto;
+    margin-top:15%;
     padding: 20px;
     background-color: #f7f7f7;
     border-radius: 8px;
@@ -14,7 +16,7 @@
   .Login-container h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size:34px;
     color: #333;
   }
   
@@ -25,7 +27,7 @@
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: 26px;
     box-sizing: border-box;
   }
   
@@ -45,7 +47,7 @@
     color: white;
     border: none;
     border-radius: 4px; /* Match input border radius */
-    font-size: 20px;
+    font-size: 26px;
     cursor: pointer;
     box-sizing: border-box; /* Ensure proper box model */
   }
@@ -59,7 +61,7 @@
   @media (max-width: 480px) {
     .Login-container input,
     .Login-container button {
-      font-size: 20px;
+      font-size: 26px;
     }
   }
   
@@ -72,11 +74,11 @@
     }
   
     .Login-container h2 {
-      font-size: 20px;
+      font-size: 26px;
     }
   
     .Login-container input,
     .Login-container button {
-      font-size: 20px;
+      font-size: 26px;
     }
   }
