@@ -234,6 +234,16 @@ const Home = () => {
                 {successMessage && <p className="success-message">{successMessage}</p>}
                 </div>
         </div>
+        
+        <footer className="footer">
+            <p>© 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</p>
+            <p>
+                <a>Privacy Policy</a>
+                <a>Terms of Use</a>
+            </p>
+        </footer>
+
+
     </div>
 
 

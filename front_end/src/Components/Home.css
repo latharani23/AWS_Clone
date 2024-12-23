@@ -343,3 +343,39 @@ p1 {
     font-weight: bold;
 }
 
+/* footer part css*/
+/* Footer Styles */
+footer {
+    background-image: linear-gradient(to right, #2b2d42, #0e0f10); /* Gradient background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0; /* Remove outer margin */
+    padding: 46px 0; /* Reduced inner padding to remove excessive space */
+    width: 100%; /* Ensure full width */
+    display: flex;
+    justify-content: space-between; /* Align content on left and right */
+    align-items: center; /* Vertically center the items */
+    position: relative;
+}
+
+
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+
+.footer a:last-child {
+    margin-right: 20px; /* Add extra space to the right of the last link */
+}
